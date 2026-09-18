@@ -280,6 +280,55 @@
         .content-card .card-copy span { font-size: 11px; color: #8aaac8; text-transform: uppercase; letter-spacing: 0.5px; }
         .content-card .card-copy h3 { font-size: 15px; color: #fff; margin: 4px 0 0; }
 
+        /* ===== ТАБЛИЦЫ ===== */
+        .table-wrap { overflow-x: auto; margin: 16px 0 24px; }
+        .table-wrap table {
+            width: 100%;
+            background: rgba(17, 29, 53, 0.5);
+            backdrop-filter: blur(8px);
+            border-radius: 12px;
+            border-collapse: collapse;
+            font-size: 15px;
+            border: 1px solid rgba(26, 48, 80, 0.4);
+        }
+        .table-wrap th {
+            background: rgba(26, 48, 80, 0.4);
+            color: #4ab8ff;
+            padding: 14px 18px;
+            text-align: left;
+            font-weight: 600;
+        }
+        .table-wrap td {
+            padding: 12px 18px;
+            border-bottom: 1px solid rgba(26, 48, 80, 0.3);
+            color: #d0e4f8;
+        }
+        .table-wrap tr:last-child td { border-bottom: none; }
+
+        /* ===== FAQ ===== */
+        .faq details {
+            background: rgba(17, 29, 53, 0.5);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(26, 48, 80, 0.4);
+            border-radius: 12px;
+            padding: 16px 20px;
+            margin-bottom: 10px;
+            transition: 0.3s;
+        }
+        .faq details:hover { border-color: #4ab8ff; }
+        .faq summary {
+            font-weight: 600;
+            color: #fff;
+            cursor: pointer;
+            font-size: 17px;
+        }
+        .faq summary:hover { color: #4ab8ff; }
+        .faq details p {
+            color: #d0e4f8;
+            padding-top: 12px;
+            margin: 0;
+        }
+
         /* ===== ОТЗЫВЫ ===== */
         .review-preview { display: flex; flex-direction: column; gap: 16px; }
         .review-preview article {
@@ -416,7 +465,7 @@
             <div class="header-actions">
                 <span class="age-badge">18+</span>
                 <a class="btn ghost" href="https://lb777.xyz/5dsgV7" rel="nofollow sponsored">Войти</a>
-                <a class="btn primary" href="https://lb777.xyz/5dsgV7" rel="nofollow sponsored">Забрать бонус</a>
+                <a class="btn primary" href="https://lb777.xyz/5dsgV7" rel="nofollow sponsored">Регистрация</a>
             </div>
         </div>
     </header>
@@ -508,7 +557,7 @@
                         <h2>Lucky Bear Казино — официальный сайт</h2>
                     </div>
                 </div>
-                <div style="max-width:800px;">
+                <div style="max-width:900px;">
                     <p style="margin-bottom:16px;">Lucky Bear — это игровая платформа, созданная для пользователей из стран СНГ. На сайте собраны сотни игр от ведущих мировых провайдеров, щедрая бонусная программа и быстрые выплаты. Мы заботимся о безопасности и комфорте каждого игрока.</p>
                     <p style="margin-bottom:16px;">Переход к регистрации осуществляется только через официальные кнопки на сайте. Перед вводом данных убедитесь, что соединение защищено (HTTPS), а адресная строка соответствует домену <strong>lucky-bear-casino.tech</strong>.</p>
                     <p style="margin-bottom:16px;">Для восстановления доступа или вопросов используйте страницу <a href="contacts.html">контактов</a>. Мы всегда на связи.</p>
@@ -516,8 +565,90 @@
             </div>
         </section>
 
-        <!-- ТОП ИГРЫ -->
+        <!-- КРАТКАЯ ТАБЛИЦА -->
         <section class="section soft">
+            <div class="container">
+                <div class="section-head">
+                    <div>
+                        <span class="eyebrow">Информация</span>
+                        <h2>Краткая таблица проекта</h2>
+                    </div>
+                </div>
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr><th>Параметр</th><th>Данные</th><th>Что проверить</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Бренд</td><td>Lucky Bear Казино</td><td>Одинаковое написание в домене, заголовке и контактах</td></tr>
+                            <tr><td>Год запуска</td><td>2021</td><td>Платформа работает с 2021 года</td></tr>
+                            <tr><td>Лицензия</td><td>Curacao</td><td>Юридические реквизиты в правилах</td></tr>
+                            <tr><td>Доступ</td><td>lucky-bear-casino.tech</td><td>HTTPS и действующий сертификат</td></tr>
+                            <tr><td>Регистрация</td><td>Через основную кнопку перехода</td><td>Адрес перехода до ввода данных</td></tr>
+                            <tr><td>Регион</td><td>Страны СНГ</td><td>Доступность по текущему местоположению</td></tr>
+                            <tr><td>Валюты</td><td>RUB, KZT, UZS, USD, USDT</td><td>Список в кассе конкретного аккаунта</td></tr>
+                            <tr><td>Возраст</td><td>18+</td><td>Местные ограничения и подтверждение личности</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- ВХОД -->
+        <section class="section">
+            <div class="container">
+                <div class="section-head">
+                    <div>
+                        <span class="eyebrow">Доступ</span>
+                        <h2>Вход в Lucky Bear Казино</h2>
+                    </div>
+                </div>
+                <div style="max-width:900px;">
+                    <p style="margin-bottom:16px;">Для авторизации используйте официальный домен. Не повторяйте пароль от почты, включайте доступные способы дополнительной защиты и никому не сообщайте одноразовые коды. Если код не приходит, сначала проверьте папку «Спам», формат номера и доступ к привязанному адресу.</p>
+                    <div class="table-wrap">
+                        <table>
+                            <thead>
+                                <tr><th>Этап</th><th>Действие</th><th>Что проверить</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>До входа</td><td>Проверьте домен и HTTPS</td><td>Отсутствие лишних слов в адресе</td></tr>
+                                <tr><td>После входа</td><td>Проверьте историю сессий</td><td>Валюта аккаунта и лимиты</td></tr>
+                                <tr><td>При ошибке</td><td>Не создавайте второй аккаунт</td><td>Обратитесь в поддержку</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ПРОВАЙДЕРЫ -->
+        <section class="section soft">
+            <div class="container">
+                <div class="section-head">
+                    <div>
+                        <span class="eyebrow">Разработчики</span>
+                        <h2>Провайдеры игр</h2>
+                    </div>
+                    <a href="games.html">Каталог провайдеров →</a>
+                </div>
+                <div style="max-width:900px; margin-bottom:20px;">
+                    <p>На платформе представлены слоты от ведущих студий: Pragmatic Play, Evolution, PG Soft, Hacksaw Gaming, BGaming, Play'n GO и других. Логотип помогает ориентироваться в каталоге, но версию игры нужно проверять по справке внутри клиента.</p>
+                </div>
+                <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:16px;">
+                    <div style="background:rgba(17,29,53,0.5);border:1px solid rgba(26,48,80,0.4);border-radius:12px;padding:16px 12px;text-align:center;font-size:14px;font-weight:600;color:#d0e4f8;">Pragmatic Play</div>
+                    <div style="background:rgba(17,29,53,0.5);border:1px solid rgba(26,48,80,0.4);border-radius:12px;padding:16px 12px;text-align:center;font-size:14px;font-weight:600;color:#d0e4f8;">Evolution</div>
+                    <div style="background:rgba(17,29,53,0.5);border:1px solid rgba(26,48,80,0.4);border-radius:12px;padding:16px 12px;text-align:center;font-size:14px;font-weight:600;color:#d0e4f8;">PG Soft</div>
+                    <div style="background:rgba(17,29,53,0.5);border:1px solid rgba(26,48,80,0.4);border-radius:12px;padding:16px 12px;text-align:center;font-size:14px;font-weight:600;color:#d0e4f8;">Hacksaw Gaming</div>
+                    <div style="background:rgba(17,29,53,0.5);border:1px solid rgba(26,48,80,0.4);border-radius:12px;padding:16px 12px;text-align:center;font-size:14px;font-weight:600;color:#d0e4f8;">BGaming</div>
+                    <div style="background:rgba(17,29,53,0.5);border:1px solid rgba(26,48,80,0.4);border-radius:12px;padding:16px 12px;text-align:center;font-size:14px;font-weight:600;color:#d0e4f8;">Play'n GO</div>
+                    <div style="background:rgba(17,29,53,0.5);border:1px solid rgba(26,48,80,0.4);border-radius:12px;padding:16px 12px;text-align:center;font-size:14px;font-weight:600;color:#d0e4f8;">Relax Gaming</div>
+                    <div style="background:rgba(17,29,53,0.5);border:1px solid rgba(26,48,80,0.4);border-radius:12px;padding:16px 12px;text-align:center;font-size:14px;font-weight:600;color:#d0e4f8;">Push Gaming</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ТОП ИГРЫ -->
+        <section class="section">
             <div class="container">
                 <div class="section-head">
                     <div>
@@ -535,8 +666,66 @@
             </div>
         </section>
 
-        <!-- ОТЗЫВЫ -->
+        <!-- БОНУСЫ -->
+        <section class="section soft">
+            <div class="container">
+                <div class="section-head">
+                    <div>
+                        <span class="eyebrow">Акции</span>
+                        <h2>Бонусы и промокоды</h2>
+                    </div>
+                    <a href="bonus.html">Подробнее →</a>
+                </div>
+                <div style="max-width:900px; margin-bottom:20px;">
+                    <p>Lucky Bear предлагает бонусную программу для новых игроков. Приветственный бонус до 500% на первый депозит + 300 фриспинов. Для активации бонуса используйте актуальные промокоды при регистрации.</p>
+                </div>
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr><th>Параметр</th><th>Почему важен</th><th>Где смотреть</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Вейджер</td><td>Показывает требуемый оборот</td><td>Полные условия акции</td></tr>
+                            <tr><td>Максимальная ставка</td><td>Превышение может отменить бонусный прогресс</td><td>Ограничения ставок</td></tr>
+                            <tr><td>Срок</td><td>Неиспользованный бонус может сгореть</td><td>Дата активации и таймер</td></tr>
+                            <tr><td>Игры</td><td>Разный вклад в отыгрыш</td><td>Таблица исключений</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- ПЛАТЕЖИ -->
         <section class="section">
+            <div class="container">
+                <div class="section-head">
+                    <div>
+                        <span class="eyebrow">Финансы</span>
+                        <h2>Пополнение и вывод средств</h2>
+                    </div>
+                    <a href="payment.html">Подробнее →</a>
+                </div>
+                <div style="max-width:900px; margin-bottom:20px;">
+                    <p>Мультивалютность удобна для СНГ, но требует внимательной проверки курса и комиссии. Доступны RUB, EUR, KZT, USD, USDT и другие валюты. Выбирайте валюту аккаунта до первого депозита, используйте собственный платёжный метод и сохраняйте идентификатор операции.</p>
+                </div>
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr><th>Этап</th><th>Контроль</th><th>Подтверждение</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Пополнение</td><td>Сумма, валюта, комиссия</td><td>Чек и ID операции</td></tr>
+                            <tr><td>Верификация</td><td>Совпадение имени и метода</td><td>Статус KYC</td></tr>
+                            <tr><td>Заявка на вывод</td><td>Лимит и выбранный метод</td><td>Номер заявки</td></tr>
+                            <tr><td>Получение</td><td>Фактическая сумма после конвертации</td><td>Выписка или запись кошелька</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- ОТЗЫВЫ -->
+        <section class="section soft">
             <div class="container split">
                 <div>
                     <span class="eyebrow">Отзывы</span>
@@ -557,6 +746,40 @@
                         <strong>Дмитрий · 5/5</strong>
                         <p>Пополнил через крипту, выиграл и вывел в тот же день. Lucky Bear — надёжно!</p>
                     </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="section">
+            <div class="container">
+                <div class="section-head">
+                    <div>
+                        <span class="eyebrow">Вопросы</span>
+                        <h2>Частые вопросы</h2>
+                    </div>
+                </div>
+                <div class="faq" style="max-width:900px;">
+                    <details>
+                        <summary>Как проверить официальный сайт?</summary>
+                        <p>Открывайте разделы через главное меню, проверяйте HTTPS, контакты и адрес перехода перед вводом данных. Не используйте ссылки из случайных сообщений.</p>
+                    </details>
+                    <details>
+                        <summary>Какие варианты названия относятся к бренду?</summary>
+                        <p>Lucky Bear, LuckyBear, Лаки Бир, ЛакиБир — всё это названия проекта.</p>
+                    </details>
+                    <details>
+                        <summary>Есть ли мультивалютность?</summary>
+                        <p>Сайт описывает RUB, KZT, UZS, USD, USDT. Фактическая доступность зависит от страны и аккаунта.</p>
+                    </details>
+                    <details>
+                        <summary>Где проверить бонус?</summary>
+                        <p>На <a href="bonus.html">странице бонусов</a> показано, какие параметры сверять: минимальный депозит, вейджер, максимальную ставку, срок и список игр.</p>
+                    </details>
+                    <details>
+                        <summary>Защищено ли соединение?</summary>
+                        <p>На боевом домене используется HTTPS/TLS; сайт также отправляет CSP, HSTS, X-Frame-Options и другие защитные заголовки.</p>
+                    </details>
                 </div>
             </div>
         </section>
@@ -599,7 +822,7 @@
     <!-- MOBILE BAR -->
     <div class="mobile-bar">
         <a href="https://lb777.xyz/5dsgV7" rel="nofollow sponsored">Войти</a>
-        <a href="https://lb777.xyz/5dsgV7" rel="nofollow sponsored">Забрать бонус</a>
+        <a href="https://lb777.xyz/5dsgV7" rel="nofollow sponsored">Регистрация</a>
     </div>
 
     <!-- SCRIPTS -->
